@@ -10,27 +10,70 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Nav Bar -->
-    
-    
+    <div class="nav-container container">
+        <ul id="nav" class="nav nav-pills">
+            <li class="name">Lisandro Mayancela</li>
+            <li role="presentation" class="active"><a href="#">About</a></li>
+            <li role="presentation" class="active"><a href="#">Portfolio</a></li>
+            <li role="presentation" class="active"><a href="#">Contact</a></li>
+        </ul>
+    </div>
     <!-- Header -->
-    
-
+    <div class="header-container container">
+        <div id="header">
+            <img src="test.JPG" class="header-item header-img"></img>
+            <h1 class="header-item">About Me</h1>
+            <p class="header-item">Programmer, Latino, Leader. There are a myriad of terms others use to describe me, however, the value I see in myself is dedication. When it comes to tackling challenges, my unyielding persistance to see a job through till its end is what sets me apart from others. Where others give up, I proceed.</p>
+        </div> 
+    </div>
     <!-- Portfolio Grid Section -->
-    
-
+    <div class="container">
+        
+    </div>
     <!-- About Section -->
-   
-
+    <div class="container">
+        
+    </div>
     <!-- Contact Section -->
-
-
+    <div class="container">
+        
+    </div>
     <!-- Footer -->
+    <div class="container">
+        
+    </div>
     
+    
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script>
+     // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyC69HbzFrEQwo8cJPMc2bG-FFjVYUZPpjs",
+        authDomain: "my-portfolio-db681.firebaseapp.com",
+        databaseURL: "https://my-portfolio-db681.firebaseio.com",
+        projectId: "my-portfolio-db681",
+        storageBucket: "my-portfolio-db681.appspot.com",
+        messagingSenderId: "713457300475"
+      };
+      firebase.initializeApp(config);
+
+    var database = firebase.database();
+    var projects_ref = database.ref('/projects');
+    
+    projects_ref.once('value', function(snapshot) {
+    	var projects = snapshot.val();
+    	console.log(projects);
+    });
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

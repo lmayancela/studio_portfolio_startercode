@@ -1,8 +1,58 @@
 /* Nav Bar CSS */
+.nav-container
+{
+    background: #2e2f30;
+    width: 100%;
+}
 
+#nav > li 
+{
+    float:right;
+    padding-left: 2%;
+    line-height: 30px;
+}
+
+#nav > .name
+{
+    float: left;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.name
+{
+    position: relative;
+    color:#d2d6db;
+}
 
 /* Header CSS */
 
+.header-container
+{
+    background: linear-gradient(#d2d6db, #2e2f30);
+    width: 100%;
+}
+
+#header
+{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#header > .header-item
+{
+    text-align: center;
+    color: #d2d6db;
+    font-family: Courier;
+}
+
+.header-img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 
 
 /* Section CSS */
