@@ -1,3 +1,16 @@
+/* General CSS */
+.portfolio-container-1
+{
+    background: linear-gradient(#d2d6db, #2e2f30);
+    width: 100%;
+}
+
+.portfolio-container-2
+{
+    background: linear-gradient(#2e2f30, #d2d6db);
+    width: 100%;
+}
+
 /* Nav Bar CSS */
 .nav-container
 {
@@ -27,13 +40,6 @@
 }
 
 /* Header CSS */
-
-.header-container
-{
-    background: linear-gradient(#d2d6db, #2e2f30);
-    width: 100%;
-}
-
 #header
 {
     text-align: center;
@@ -65,6 +71,12 @@
 
 /* Portfolio Item CSS */
 
+.project-item
+{
+    text-align: center;
+    color: #d2d6db;
+    font-family: Courier;
+}
 
 
 /* Footer CSS */
